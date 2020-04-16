@@ -21,3 +21,4 @@ jobs:
     - name: Run `uname -a` in Kunpeng env
       run: |
         uname -a
+        cat /etc/os-release
