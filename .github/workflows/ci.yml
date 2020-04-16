@@ -22,3 +22,4 @@ jobs:
       run: |
         uname -a
         cat /etc/os-release
+        lscpu | grep -E "Architecture|Model name|CPU\(s\):"
