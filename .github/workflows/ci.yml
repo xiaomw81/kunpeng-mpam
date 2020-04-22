@@ -21,5 +21,6 @@ jobs:
     - name: Run `uname -a` in Kunpeng env
       run: |
         uname -a
+        sudo dmidecode -t memory | egrep -c "Memory Speed: [0-9]"
         cat /etc/os-release
         lscpu | grep -E "Architecture|Model name|CPU\(s\):"
